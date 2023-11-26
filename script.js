@@ -1,3 +1,12 @@
+   // Simula o carregamento da página
+   window.addEventListener('load', function() {
+    // Adiciona um atraso de 2 segundos antes de esconder o loading (2000 milissegundos)
+    setTimeout(function() {
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('conteudo').style.display = 'block';
+    }, 300);
+});
+
 
 function adicionarProduto() {
     const produto = document.getElementById("produto").value;
