@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>TO LISO NO MERCADO</title>
+    <script src="script.js" defer></script>
+
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="headerContainer">
+        <div class="logo">
+          <img src="./assets/logo.png" alt="logo" width="380" />
+        </div>
+      </div>
+    </header>
+
+    <div id="overlay">
+      <div id="popup">
+          <span id="close-btn" onclick="fecharPopup()">&times;</span>
+          <h2>Bem-vindo(A)!</h2>
+          <p>Por favor, insira seu nome:</p>
+          <input type="text" id="input-nome" placeholder="Seu Nome">
+          <br>
+          <button id="btn-salvar" onclick="exibirBoasVindas()">Salvar</button>
+      </div>
+  </div>
+  
+
+  </div>
+
+    <nav>
+      <div class="nav">
+        <div class="bemVindo">
+          <h1>BEM VINDO(A)</h1>
+          <span id="nome-usuario"></span>
+          
+        </div>
+
+        <div class="gasto">
+          <h1>"Minha conta bancária está de dieta. Ela só aceita depósitos leves."</h1>
+        </div>
+      </div>
+    </nav>
+    <!-- CONTAINER COM CAMPOS PARA ADICIONAR ITEM -->
+    <main>
+      <div class="mainContainer">
+        <div class="addProduct">
+          <!-- CAMPO NOME DO ITEM -->
+          <div>
+            <input
+              class="product1"
+              type="text"
+              id="name"
+              placeholder="PRODUTO:"
+            />
+          </div>
+
+          <!-- CAMPO QUANTIDADE DE ITENS  -->
+          <div>
+            <input
+              class="product2"
+              type="number"
+              id="qtd"
+              placeholder="QUANTIDADE:"
+            />
+          </div>
+
+          <!-- CAMPO PREÇO DO ITEM -->
+          <div>
+            <input
+              class="product3"
+              type="text"
+              id="preco"
+              step="0.01"
+              placeholder="PREÇO:"
+            />
+          </div>
+
+          <!-- BOTÃO ADICIONAR -->
+          <button class="btnAdd" type="submit" id="send" value="send">
+            
+            <img
+              src="./assets/adicionar-botao.png"
+              alt="botão de adicionar"
+              width="30"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="boxProduct">
+  <!-- Lista de Produtos -->
+  <ul id="lista-produtos"></ul>
+
+  <!-- Tabela de Produtos -->
+  <table>
+      <tbody id="tabela-produtos">
+      </tbody>
+  </table>
+      <!-- <div class="product1-box"><b>PRODUTO:</b></div>
+        <div class="product2-box"><b>QTD:</b></div>
+        <div class="product-box"><b>PREÇO:</b></div>
+      </div>
+ -->
+</main>
+
+<div id="total">
+  <p>Total Geral: <span id="total-valor">0.00</span></p>
+</div>
+ 
+    <footer>
+      <div class="footerContainer">
+        <h1>TERMOS E CONDIÇÕES DE USO:</h1>
+        <h2>
+          PARA SE FAZER O USO DESSE SISTEMA SÓ É NECESSÁRIO ESTAR LISO OU SEJA
+          COM POUCO DINHEIRO!
+        </h2>
+
+        <img
+          src="./assets/grupo-souza-branco.png"
+          alt="logo-grupo-souza"
+          width="150"
+        />
+        <p>"Todos os direitos reservados 2023</p>
+      </div>
+    </footer>
+  </body>
+</html>
