@@ -23,7 +23,6 @@ body {
   align-items: center;
 }
 
-
 #overlay {
   display: none;
   position: fixed;
@@ -80,154 +79,94 @@ body {
   margin-top: 10px;
 }
 
-#nome-usuario{
+#nome-usuario {
   color: #ffb002;
   font-size: 1.5em;
-  font-family: 'roboto';
-
-
+  font-family: "roboto";
 }
 
 .bemVindo {
   text-align: center;
   margin-left: 1rem;
-
 }
 
-.gasto h1{
- font-size: 15px; 
+.gasto h1 {
+  font-size: 15px;
 }
 
-.mainContainer {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-  gap: 10px;
-  flex-direction: column;
-}
-
-.addProduct {
-  display: flex;
-  gap: 4px;
-}
-.product0 {
-  background-color: #ffb002;
-  width: 3rem;
-  height: 2rem;
-  border-radius: 6px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  padding-left: 10px;
-}
-.product1 {
-  background-color: #ffb002;
-  width: 32vw;
-  height: 4vh;
-  text-align: center;
-  border-radius: 6px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  padding-left: 10px;
-}
-.product2 {
-  background-color: #ffb002;
-  width: 30vw;
-  height: 4vh;
-  border-radius: 6px;
-  text-align: center;
-  padding-left: 10px;
-}
-.product3 {
-  background-color: #ffb002;
-  width: 20vw;
-  height: 4vh;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  border-radius: 6px;
-  text-align: center;
+button {
+  background-color: #373737;
+  border: none;
 }
 
 .btnAdd {
-  padding-top: 3px;
-  border: none;
-  background-color: #373737;
+  width: 30px;
+  margin-top: 3px;
 }
 
-.btnAdd img {
-  border: none;
-  background-color: #373737;
+#tabela-produtos {
+  border-radius: 4px;
+  width: 24rem;
+  margin-left: 16px;
+  color: white;
 }
 
-.boxProduct {
-  padding: 10px;
-  background-color: #ffb002;
-  gap: 10px;
-  display: flex;
-  width: 25rem;
-  list-style-type: none;
-  padding: 0;
-  border-radius: 9px;
-}
 #lista-produtos {
-  width: 50rem;
-  font-family: 'roboto';
   background-color: #ffb002;
   list-style: none;
   display: flex;
-  align-items: center;
   flex-direction: column;
   display: inline;
   word-wrap: break-word;
   font-size: 18px;
-  border-radius: 10px;
-  padding-top: 4px;
+  border-radius: 20px;
 }
 
-.btn-excluir {
+.excluir-edit,
+.editar-edit {
   background-color: #ff0000;
   color: #fff;
   border: none;
   padding: 5px 10px;
   cursor: pointer;
-  margin-left: 15px;
+  margin-left: 10px;
   border-radius: 5px;
-  font-family: 'roboto';
-}
-
-#lista-produtos li {
-  height: 60px;
-  width: 380px;
-  border: 1px solid #ffffff;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
+  font-family: "roboto";
 }
 
 #total {
-  background-color: #ffb002;
-  margin-top: 10px;
+  background-color: #ff0000;
   width: 40vw;
   height: 10vh;
-  text-align: center;
-  font-size: 25px;
   border-radius: 6px;
   display: flex;
-  justify-content: center;
+  color: white;
+  padding-left: 35px;
   align-items: center;
-  font-family: 'roboto';
-
+  font-family: "roboto";
+  font-style: oblique;
+  margin-left: 125px;
+}
+#total p {
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+  color: white;
+  font-family: "roboto";
+  font-style: oblique;
+}
+#total span {
+  display: flex;
+  font-size: 29px;
+  color: white;
+  font-family: "roboto";
+  font-style: oblique;
 }
 
 .footerContainer {
   margin-top: 10px;
   width: 90%;
-  font-size:11px;
+  font-size: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -241,6 +180,57 @@ body {
   margin-left: 115px;
 }
 
-.footerContainer p{
-font-size: 15px;
+.footerContainer p {
+  font-size: 15px;
+}
+
+#carrinho {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  width: 100%;
+}
+
+#carrinho input {
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #ffb002;
+  color: white;
+  font-weight: bold;
+}
+
+#total {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.produto {
+  background-color: #ffb002;
+  border-radius: 10px;
+  text-align: center;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.produto input {
+  background-color: #ffb002;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-left: 43px;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  width: 60px;
 }
